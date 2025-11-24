@@ -1,5 +1,118 @@
-﻿# CSE 4705 Final Project 
-Spam messages are often scams, security threats and can put a user at risk. To create a model that detects if messages are spam or not, we plan on utilizing the Sigmoid function and even logistic regression to classify what type of messages the user is receiving. This way, we will be able to achieve a binary output to detect whether the SMS is spam or not. We also investigated this Kaggle dataset for more data insights. We plan to develop an AI model that detects whether a message is spam or not. The goal is to help users—especially older adults who may have trouble distinguishing spam—from falling for misleading or unsafe messages. We’re focusing on training and optimizing a model to classify text messages based on feeding it patterns in language and structure, using datasets of both real and spam messages.
+﻿# 📡 SMS Spam Classification – CSE 4705 Final Project
+
+This project explores how traditional machine-learning models compare to modern AI/NLP models for detecting SMS spam messages. Spam texts have become increasingly dangerous due to advances in AI-generated language, making automated detection essential for user safety.
+
+We evaluate multiple approaches:
+
+- **Classic ML models:** Logistic Regression, Decision Tree, Gradient Boosting, XGBoost  
+- **Probabilistic model:** Naive Bayes  
+- **Modern NLP model:** BERT (Bidirectional Encoder Representations from Transformers)
+
+Our goal is to measure how well simple text-based machine-learning models perform relative to a transformer-based language model when classifying short SMS messages as *spam* or *ham*.
+
+---
+
+## 📁 Project Structure
+
+ArtificialIntelligence/
+│
+├── models/
+│ ├── classic_models.py
+│ ├── naive_bayes.py
+│ └── bert_classifier.py
+│
+├── main.py
+├── spam.csv
+└── README.md
 
 
-source: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset   
+---
+
+## 📊 Models Used
+
+### **1. Classic Machine Learning Models**
+- Logistic Regression  
+- Decision Tree  
+- Gradient Boosting  
+- XGBoost  
+
+These models rely on TF-IDF vectorization and treat text as numeric features.
+
+---
+
+### **2. Naive Bayes**
+A baseline spam-filtering model using TF-IDF + Bayes’ theorem. Lightweight, fast, and effective for sparse text.
+
+---
+
+### **3. BERT (Transformer NLP Model)**
+A modern deep-learning model that understands **context**, **semantics**, and **word relationships**. Used with a classification head to output spam vs. ham labels.
+
+---
+
+## 🗂 Dataset
+
+**SMS Spam Collection Dataset**  
+Source: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset  
+
+Labels:  
+- **ham** – safe message  
+- **spam** – spam or scam message  
+
+---
+
+## ▶️ How to Run the Project
+
+### **Install dependencies**
+pip install -r requirements.txt
+wordcloud
+
+
+### **Run all models**
+python main.py
+
+
+This will run:
+- Classic ML  
+- Naive Bayes  
+- BERT  
+
+Each model prints:
+- Accuracy  
+- Precision  
+- Confusion matrix  
+- Classification report  
+
+---
+
+## 🧪 Results Summary (Fill in after running)
+
+| Model | Accuracy | Precision |
+|-------|----------|-----------|
+| Logistic Regression |  |  |
+| Decision Tree |  |  |
+| XGBoost |  |  |
+| Gradient Boosting |  |  |
+| **Naive Bayes** |  |  |
+| **BERT** |  |  |
+
+---
+
+## 📊 Visualizations
+
+- Confusion matrices  
+- ROC curves  
+- Word cloud of most common spam terms  
+
+(See “Visualization Code” section below)
+
+---
+
+## 👨‍💻 Contributors
+- Layla Nassar  
+- Nina Cunha  
+- Ananya Soleti  
+- Ananya Sripathi  
+
+---
+
