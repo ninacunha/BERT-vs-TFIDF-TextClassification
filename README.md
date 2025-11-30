@@ -1,31 +1,14 @@
-﻿# 📡 SMS Spam Classification – CSE 4705 Final Project
+﻿# SMS Spam Classification – CSE 4705 Final Project
 
 This project explores how traditional machine-learning models compare to modern AI/NLP models for detecting SMS spam messages. Spam texts have become increasingly dangerous due to advances in AI-generated language, making automated detection essential for user safety.
 
 We evaluate multiple approaches:
 
-- **Classic ML models:** Logistic Regression, Decision Tree, Gradient Boosting, XGBoost  
+- **Classic ML models:** Logistic Regression, Decision Tree, XGBoost  
 - **Probabilistic model:** Naive Bayes  
 - **Modern NLP model:** BERT (Bidirectional Encoder Representations from Transformers)
 
-Our goal is to measure how well simple text-based machine-learning models perform relative to a transformer-based language model when classifying short SMS messages as *spam* or *ham*.
-
----
-
-## 📁 Project Structure
-
-ArtificialIntelligence/
-│
-├── models/
-│ ├── classic_models.py
-│ ├── naive_bayes.py
-│ └── bert_classifier.py
-│
-├── main.py
-├── spam.csv
-└── README.md
-
-
+Our goal is to measure how well simple text-based machine-learning models perform relative to a transformer-based language model when classifying short SMS messages
 ---
 
 ## 📊 Models Used
