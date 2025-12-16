@@ -4,8 +4,7 @@ This project explores how traditional machine-learning models compare to modern 
 
 We evaluate multiple approaches:
 
-- **Classic ML models:** Logistic Regression, Decision Tree, XGBoost  
-- **Probabilistic model:** Naive Bayes  
+- **Classic ML models:** Logistic Regression, Decision Tree, XGBoost, Gradient Boosting
 - **Modern NLP model:** BERT (Bidirectional Encoder Representations from Transformers)
 
 Our goal is to measure how well simple text-based machine-learning models perform relative to a transformer-based language model when classifying short SMS messages
@@ -23,11 +22,6 @@ These models rely on TF-IDF vectorization and treat text as numeric features.
 
 ---
 
-### **2. Naive Bayes**
-A baseline spam-filtering model using TF-IDF + Bayes’ theorem. Lightweight, fast, and effective for sparse text.
-
----
-
 ### **3. BERT (Transformer NLP Model)**
 A modern deep-learning model that understands **context**, **semantics**, and **word relationships**. Used with a classification head to output spam vs. ham labels.
 
@@ -42,54 +36,7 @@ Labels:
 - **ham** – safe message  
 - **spam** – spam or scam message  
 
----
 
-## ▶️ How to Run the Project
-
-### **Install dependencies**
-pip install -r requirements.txt
-wordcloud
-
-
-### **Run all models**
-python main.py
-
-
-This will run:
-- Classic ML  
-- Naive Bayes  
-- BERT  
-
-Each model prints:
-- Accuracy  
-- Precision  
-- Confusion matrix  
-- Classification report  
-
----
-
-## 🧪 Results Summary (Fill in after running)
-
-| Model | Accuracy | Precision |
-|-------|----------|-----------|
-| Logistic Regression |  |  |
-| Decision Tree |  |  |
-| XGBoost |  |  |
-| Gradient Boosting |  |  |
-| **Naive Bayes** |  |  |
-| **BERT** |  |  |
-
----
-
-## 📊 Visualizations
-
-- Confusion matrices  
-- ROC curves  
-- Word cloud of most common spam terms  
-
-(See “Visualization Code” section below)
-
----
 
 ## 👨‍💻 Contributors
 - Layla Nassar  
